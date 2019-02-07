@@ -1,11 +1,9 @@
 // The second argument/parameter is expected to be a function
 function findWaldo(arr, found) {
-  var count = 0;
-  arr.forEach(function(arr) {
+  arr.forEach(function(arr,i) {
     if (arr === "Waldo") {
-      found(count);
+      found(i);
     }
-    count++;
   });
 };
 
